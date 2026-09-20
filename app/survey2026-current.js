@@ -1,7 +1,7 @@
 // Сгенерировано bot/aggregate.js — не править руками
 window.SURVEY = {
   "wave": 2026,
-  "generated": "2026-09-19T06:16:10.261Z",
+  "generated": "2026-09-20T06:44:14.959Z",
   "dims": {
     "role": [
       "разработчик",

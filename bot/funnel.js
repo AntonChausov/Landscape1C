@@ -76,6 +76,18 @@ rows.forEach((r) => {
     days.set(r.ts.slice(0, 10), d);
 });
 for (const d of firstDay.values()) days.get(d).fresh++;
+// Заполняем тихие дни до текущей даты: для мониторинга отсутствие строки
+// должно отличаться от пропуска данных. Даты журнала и сегодня — в UTC.
+const firstLoggedDay = [...days.keys()].sort()[0];
+const today = new Date().toISOString().slice(0, 10);
+for (
+    let date = new Date(`${firstLoggedDay}T00:00:00.000Z`);
+    date.toISOString().slice(0, 10) <= today;
+    date.setUTCDate(date.getUTCDate() + 1)
+) {
+    const day = date.toISOString().slice(0, 10);
+    if (!days.has(day)) days.set(day, { fresh: 0, answers: 0 });
+}
 [...days.entries()]
     .sort()
     .forEach(([d, x]) => console.log(`  ${d}: +${x.fresh} / ${x.answers}`));
