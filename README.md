@@ -1,5 +1,7 @@
 # Ландшафт технологий 1С
 
+**Мои правки в проект**
+
 [![Сайт](https://img.shields.io/website?url=https%3A%2F%2Flandscape1c.ru&label=landscape1c.ru&up_message=%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD&down_message=%D0%BD%D0%B5%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%B5%D0%BD&style=for-the-badge)](https://landscape1c.ru)
 [![Деплой](https://img.shields.io/github/actions/workflow/status/Oxotka/Landscape1C/deploy.yml?branch=main&style=for-the-badge&label=%D0%B4%D0%B5%D0%BF%D0%BB%D0%BE%D0%B9)](https://github.com/Oxotka/Landscape1C/actions/workflows/deploy.yml)
 [![Проверка данных](https://img.shields.io/github/actions/workflow/status/Oxotka/Landscape1C/validate.yml?branch=main&style=for-the-badge&label=%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)](https://github.com/Oxotka/Landscape1C/actions/workflows/validate.yml)
